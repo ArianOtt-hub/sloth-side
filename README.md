@@ -7,7 +7,9 @@ Make sure you you have Python ande NodeJS installed and run the following comman
 
 # Create a virtual environment
 (Depending on your Python installation, it might be python3, python3.8 etc)
+```cmd
 $ python -m venv venv
+```
 
 # Activate it
 ## Linux
