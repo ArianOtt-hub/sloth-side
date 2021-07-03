@@ -26,25 +26,21 @@ $ venv\Scripts\activate
 $ pip install -r requirements.txt
 ```
 
-# Install NodeJS dependencies
+# Install NodeJS dependencies and run build
 ```cmd
+$ cd jstools
 $ npm install
+$ npm run build
 ```
 
 # Make SQLite and its alterations
 ```cmd
+$ cd ..
 $ python manage.py makemigrations
 $ python manage.py migrate
 ```
 
-# Go to the jstools folders and run build
-```cmd
-$ cd jstools
-$ npm run build
-```
-
 # Go to the project's root folder and un server
 ```cmd
-$ cd ..
 $ python manage.py runserver
 ```
