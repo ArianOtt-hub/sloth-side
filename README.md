@@ -40,6 +40,11 @@ $ python manage.py makemigrations
 $ python manage.py migrate
 ```
 
+# Get static files (css, js, imgs)
+```cmd
+$ python manage.py collectstatic
+```
+
 # Go to the project's root folder and un server
 ```cmd
 $ python manage.py runserver
