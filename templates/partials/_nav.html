@@ -1,1 +1,29 @@
 {% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <title>Home | SlothLMS</title>
+    <link href="../static/css/nav.css" rel="stylesheet">
+    <link href="../static/css/style.css" rel="stylesheet">
+</head>
+<header>
+    <div class="header"></div>
+    <nav>
+        <ul class="navigation-list" id="navigation-dom">
+            <li><h6 class="navigation-text"><a href="https://thelanguagesloth.com/"
+                                               alt="Go back to the langauge sloth website">Home</a></h6></li>
+            <li><h6 class="navigation-text"><a>My classes</a></h6></li>
+            <li><h6 class="navigation-text"><a>My events</a></h6></li>
+            <li><h6 class="navigation-text"><a>My helpdesk</a></h6></li>
+            <li><h6 class="navigation-text"><a>Sloth Wiki</a></h6></li>
+            <li><h6 class="logout-btn-style"><a>Logout</a></h6>
+            </li>
+        </ul>
+    </nav>
+    <ul id="navigation-dom">
+
+    {% for n in nav %}
+        <li><h6><a href="/category/{{ n.id }}">{{ n.name }}</a></h6></li>
+    {% endfor %}
+</ul>
+</header>
